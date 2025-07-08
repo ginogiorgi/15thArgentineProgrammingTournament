@@ -1,3 +1,7 @@
-# 15th Argentine Programming Tournament
+# Training Camp Argentina 2025
 
-Preparation for the 15th Argentine Programming Tournament // Preparacion para el 15 torneo argentino de programación
+Archivos utilizados en el Training Camp Argentina 2025, hosteado este año en la Universidad Tecnológica Nacional (U.T.N.) de Santa Fe.
+
+Participantes:
+  - Juan Manuel García
+  - Gino Rubén Giorgi
