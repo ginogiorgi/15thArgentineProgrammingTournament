@@ -1,19 +1,12 @@
 n = int(input())
 arr = list(map(int, input().split()))
 result = arr[-1]
-totalResult = 0
-for chocolates in range(n-2, -1, -1):
-    if arr[chocolates] < arr[chocolates+1] or arr[chocolates+1] == 1 and arr[chocolates] != 1:
-        result += arr[chocolates]
-    else:
-        result += arr[chocolates+1]-1
-    if result > totalResult:
-        totalResult = result
-    if arr[chocolates] == 1:
+totalResult = arr[-1]
+for chocolates in range(n - 2, -1, -1):
+    # La cantidad máxima que puedo tomar de este tipo es como mucho uno menos que la anterior
+    result = min(arr[chocolates], result - 1)
+    if result < 0:
         result = 0
-    
-        
+    totalResult += result
+
 print(totalResult)
-    
-    
-    
