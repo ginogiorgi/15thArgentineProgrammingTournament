@@ -1,46 +1,24 @@
-"""At the IT Campus "NEIMARK", there are training sessions in competitive programming — both individual and team-based!
+"""En el campus IT "NEIMARK" se realizan entrenamientos de programación competitiva, ¡tanto individuales como en equipo!
 
-For the next team training session, n
- students will attend, and the skill of the i
--th student is given by a positive integer ai
-.
+Para la próxima sesión de entrenamiento en equipo, asistirán n estudiantes, y la habilidad del i-ésimo estudiante está dada por un entero positivo a_i.
 
-The coach considers a team strong if its strength is at least x
-. The strength of a team is calculated as the number of team members multiplied by the minimum skill among the team members.
+El entrenador considera que un equipo es fuerte si su fuerza es al menos x. La fuerza de un equipo se calcula como el número de integrantes multiplicado por la habilidad mínima entre sus miembros.
 
-For example, if a team consists of 4
- members with skills [5,3,6,8]
-, then the team's strength is 4⋅min([5,3,6,8])=12
-.
+Por ejemplo, si un equipo tiene 4 miembros con habilidades [5, 3, 6, 8], la fuerza del equipo es 4 * min([5, 3, 6, 8]) = 12.
 
-Output the maximum possible number of strong teams, given that each team must have at least one participant and every participant must belong to exactly one team.
+Salida: Imprimir el máximo número posible de equipos fuertes, sabiendo que cada equipo debe tener al menos un participante y cada participante debe pertenecer exactamente a un equipo.
 
-Input
-Each test contains multiple test cases. The first line contains the number of test cases t
- (1≤t≤104
-). The description of the test cases follows.
+Entrada:
+- La primera línea contiene el número de casos de prueba t (1 ≤ t ≤ 10^4).
+- Cada caso de prueba contiene dos enteros n y x (1 ≤ n ≤ 2*10^5, 1 ≤ x ≤ 10^9): el número de estudiantes y la fuerza mínima para que un equipo sea fuerte.
+- La siguiente línea contiene n enteros a_i (1 ≤ a_i ≤ 10^9): la habilidad de cada estudiante.
+- Se garantiza que la suma de n en todos los casos no supera 2*10^5.
 
-The first line of each test case contains two integers n
- and x
- (1≤n≤2⋅105
-, 1≤x≤109
-) — the number of students in training and the minimum strength of a team to be considered strong.
+Salida:
+- Para cada caso de prueba, imprimir el máximo número posible de equipos con fuerza al menos x.
 
-The second line of each test case contains n
- integers ai
- (1≤ai≤109
-) — the skill of each student.
-
-It is guaranteed that the sum of n
- over all test cases does not exceed 2⋅105
-.
-
-Output
-For each test case, output the maximum possible number of teams with strength at least x
-.
-
-Example
-InputCopy
+Ejemplo:
+Entrada:
 5
 6 4
 4 5 3 3 2 6
@@ -52,7 +30,8 @@ InputCopy
 9 1 7
 6 10
 6 1 3 6 3 2
-OutputCopy
+
+Salida:
 4
 0
 4

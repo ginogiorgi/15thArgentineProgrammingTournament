@@ -1,43 +1,24 @@
-"""You are given three non-negative integers b
-, c
-, and d
-.
+"""Dado tres enteros no negativos b, c y d, encontrar un entero no negativo a ∈ [0, 2^61] tal que:
+    (a | b) - (a & c) = d
+Donde | es el OR bit a bit y & es el AND bit a bit.
 
-Please find a non-negative integer a∈[0,261]
- such that (a|b)−(a&c)=d
-, where |
- and &
- denote the bitwise OR operation and the bitwise AND operation, respectively.
+Si existe tal a, imprimir su valor. Si no hay solución, imprimir -1. Si hay múltiples soluciones, imprimir cualquiera de ellas.
 
-If such an a
- exists, print its value. If there is no solution, print a single integer −1
-. If there are multiple solutions, print any of them.
+Entrada:
+- La primera línea contiene el número de casos de prueba t (1 ≤ t ≤ 10^5).
+- Cada caso de prueba consiste en una línea con tres enteros b, c y d (0 ≤ b, c, d ≤ 10^18).
 
-Input
-Each test contains multiple test cases. The first line contains the number of test cases t
- (1≤t≤105
-). The description of the test cases follows.
+Salida:
+- Para cada caso de prueba, imprimir el valor de a, o -1 si no existe solución.
 
-The only line of each test case contains three positive integers b
-, c
-, and d
- (0≤b,c,d≤1018
-).
-
-Output
-For each test case, output the value of a
-, or −1
- if there is no solution. Please note that a
- must be non-negative and cannot exceed 261
-.
-
-Example
-InputCopy
+Ejemplo:
+Entrada:
 3
 2 2 2
 4 2 6
 10 2 14
-OutputCopy
+
+Salida:
 0
 -1
 12"""

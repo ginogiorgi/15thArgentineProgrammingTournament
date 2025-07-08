@@ -1,17 +1,11 @@
-# Geometria
+# Geometría
 
-punto vector
-Vector de N componentes conjunto ordenado de n numeros (a1, ..., an)
+## Vector
 
-punto vector
-Como los puntos del plano xy estan descriptos por un par ordenado (xy) podemos considerarlos equivalentes de
-Que podemos ahcer con vectores?
-Norma de un vector U
-Suma resta de vectores
-...
+-   **Vector de N componentes**: Conjunto ordenado de números $(a_1, ..., a_N)$
 
-polar sort - convex full
+## Polar Sort - Convex Hull
 
-linea
+## Línea
 
-segmento
+## Segmento
