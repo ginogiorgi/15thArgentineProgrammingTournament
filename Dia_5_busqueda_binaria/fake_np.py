@@ -1,14 +1,25 @@
 l, r = map(int, input().split())
-if l == r:
-    print(l)
-else:
-    max_count = 0
-    result = 2
-    for d in range(2, r + 1):
-        count = r // d - (l - 1) // d
-        if count > max_count:
-            max_count = count
-            result = d
-        if max_count == r - l + 1:
-            break
-    print(result)
+
+factores = {} # key va a ser mi primo y el value el contador
+
+for e in range(l, r+1, 1):
+    d = 2
+    n = e
+    while d * d <= n:
+        while n % d == 0:
+                if d in factores:
+                    factores[d] += 1
+                else:
+                    factores[d] = 1 
+                n //= d
+        d += 1
+    if n > 1:
+            if n in factores:
+                factores[n] += 1
+            else:
+                factores[n] = 1 
+            
+
+clave_max = max(factores, key=factores.get)
+print(clave_max)
+print(factores)
