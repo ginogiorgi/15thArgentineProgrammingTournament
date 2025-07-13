@@ -11,4 +11,3 @@ for i in range(7):
     if rooms < timeSlot:
         rooms = timeSlot
 print(rooms)
-    

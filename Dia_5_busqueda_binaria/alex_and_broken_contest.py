@@ -4,4 +4,3 @@ count = 0
 for friend in alexFriends:
     count += word.count(friend)
 print("YES" if count == 1 else "NO")
-

@@ -1,5 +1,5 @@
 n = int(input())
-for _ in range(n+1):
+for _ in range(n + 1):
     line = input()
     if line == "WIN" or line == "LOSE":
         exit()

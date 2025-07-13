@@ -1,10 +1,11 @@
 n = int(input())
+arr = []
 
-arr =  []
-
-for i in range(n/2):
-    arr.append(2*i-1)
-for j in range(n/2):
-    arr.append(1*i)
-
-    
+if 1 < n <= 3:
+    print("NO SOLUTION")
+else:
+    for i in range(2, n + 1, 2):
+        arr.append(i)
+    for j in range(1, n + 1, 2):
+        arr.append(j)
+print(" ".join(map(str, arr)))

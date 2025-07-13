@@ -14,26 +14,25 @@ for i in range(rows):
     arrOdds = [x for x in range(odds, odds - columns, -1) if x % 2 != 0]
     evens += columns
     odds -= columns
-    for j in range(columns if columns%2 == 0 else columns+1):
+    for j in range(columns if columns % 2 == 0 else columns + 1):
         iterater = not iterater
         if iterater:
             if pivot:
                 print(j)
-                result.append(arrEvens[0+(j//2)])
+                result.append(arrEvens[0 + (j // 2)])
             else:
                 print(j)
-                result.append(arrEvens[-1-(j//2)])
+                result.append(arrEvens[-1 - (j // 2)])
         else:
             if pivot:
                 print(j)
-                result.append(arrOdds[0-(j//2)])
+                result.append(arrOdds[0 - (j // 2)])
             else:
                 print(j)
-                result.append(arrOdds[-1+(j//2)])
+                result.append(arrOdds[-1 + (j // 2)])
 
 print("YES")
 
 for i in range(rows):
-    resultRow = result[columns*i:columns*i+columns]
-    print(" ".join(map(str,resultRow)))
-
+    resultRow = result[columns * i : columns * i + columns]
+    print(" ".join(map(str, resultRow)))
