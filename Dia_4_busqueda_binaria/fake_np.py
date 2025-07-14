@@ -1,6 +1,6 @@
 l, r = map(int, input().split())
 
-factores = {}  # key va a ser mi primo y el value el contador
+factores = {}
 
 for e in range(l, r + 1, 1):
     d = 2
